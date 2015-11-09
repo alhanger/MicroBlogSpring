@@ -54,4 +54,13 @@ public class MicroblogSpringController {
 
         return "redirect:/";
     }
+
+    @RequestMapping("/edit")
+    public String editMessage(String editText, Integer id) {
+        Message message = messages.get(id - 1);
+
+        message.text = editText;
+
+        return "redirect:/";
+    }
 }

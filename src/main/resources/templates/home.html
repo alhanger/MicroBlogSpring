@@ -32,5 +32,15 @@ Messages by {{username}}:
     <button type="submit">Delete</button>
 </form> <br>
 {{/messages}}
+
+<br><br>
+
+{{#username}}
+<form action="edit" method="post" style="display: inline;">
+    <input type="number" placeholder="Post #" name="id"/>
+    <input type="text" placeholder="Edit Message" name="editText"/>
+    <button type="submit">Edit</button>
+</form>
+{{/username}}
 </body>
 </html>
