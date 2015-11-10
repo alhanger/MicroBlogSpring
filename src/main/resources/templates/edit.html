@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Post</title>
+</head>
+<body>
+
+{{#message}}
+<h3>Original Message:</h3>
+<h4>{{text}}</h4>
+<br><br>
+
+<form action="edit-post" method="post">
+    <input type="hidden" name="id" value="{{id}}"/>
+    <input type="text" placeholder="Edit Post" name="editPost"/>
+    <button type="submit">Submit</button>
+</form>
+{{/message}}
+
+
+</body>
+</html>
